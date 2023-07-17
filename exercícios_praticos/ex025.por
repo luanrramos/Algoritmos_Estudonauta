@@ -1,5 +1,5 @@
 programa
-{//ex 025 - Três valores em ordem
+{//ex 025 - Três valores em ordem
 	
 	funcao inicio()
 	{
@@ -8,6 +8,7 @@ programa
 		leia(n1)
 		leia(n2)
 		leia(n3)
+		
 	se ((n1 != n2) e (n1 != n3)){
 		se(n1 > n2 e n1 >n3){
 			escreva("Maior: "+n1)
@@ -53,7 +54,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 666; 
+ * @POSICAO-CURSOR = 51; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
