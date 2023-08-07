@@ -1,6 +1,6 @@
-programa//EX 035 
+programa//EX 035 
 {
-	
+	inclua biblioteca Texto --> t
 	funcao inicio()
 	{
 		inteiro qntp, pesoref ,peso, cont = 1, contm = 0, contf = 0, pesolim = 0
@@ -22,7 +22,7 @@ programa//EX 035
 
 			se (peso <= pesoref){
 				escreva("====== PESO DENTRO DO LIMITE ("+pesoref+".00 KG) =======\n")
-				se (sx != 'M' ou sx != 'm' ou sx != 'f' ou sx != 'F'){
+				se (nao(sx == 'M' ou sx == 'm' ou sx == 'f' ou sx == 'F')){
 					escreva("SEXO INVÁLIDO (NÃO CONTABILIZADO)\n")
 				}
 			}
@@ -32,7 +32,7 @@ programa//EX 035
 					contm++
 					pesolim++
 				}
-				senao se (sx == 'F' ou sx == 'f'){
+				senao se ((sx) == 'F'){
 					contf++
 					pesolim++
 				}
@@ -51,9 +51,9 @@ programa//EX 035
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 18; 
+ * @POSICAO-CURSOR = 918; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {qntp, 6, 10, 4}-{pesoref, 6, 16, 7}-{peso, 6, 25, 4}-{cont, 6, 31, 4}-{contm, 6, 41, 5}-{contf, 6, 52, 5}-{sx, 7, 11, 2};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

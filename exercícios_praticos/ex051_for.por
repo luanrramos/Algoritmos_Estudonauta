@@ -1,30 +1,28 @@
-programa//EX 031 - CONTAGEM REGRESSIVA!
+programa//EX 051 - PYRAMID REPRESENTATION WITH " FOR " FORM
 {
-	inclua biblioteca Util --> u
+	
 	funcao inicio()
 	{
-		inteiro cont, m
+		inteiro n, c, cont, k, i
+		cadeia x = "**"
 
+		escreva("Esse triângulo vai ter quantos andares? ")
+		leia(n)
 		
-		escreva("Sua contavem regressiva vai começar em: ")
-		leia(cont)
-
-		escreva("Marcar os múltiplos de ")
-		leia(m)
-
-		enquanto (cont >= 0){
-
-			se (cont % m == 0){
-				escreva("["+cont+"] - ")u.aguarde(500)
+		para(cont = 1; cont<=n; cont++){
+			para (k = n; k >=cont; k--){
+				
+				escreva(" ")
+				
 			}
-			senao{
-				escreva(cont+ " - ")u.aguarde(500)
+				escreva (x)
+				escreva("\n")
+			para(c = 1; c<=1; c++){
+				c = 1
+				x = x + "**"
+				
 			}
-			
-			cont--
-			
 		}
-		escreva("FIM!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +30,7 @@ programa//EX 031 - CONTAGEM REGRESSIVA!
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 393; 
+ * @POSICAO-CURSOR = 59; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,9 +1,9 @@
-programa//EX 038
+programa//EX 038 - PEOPLE CADASTRATION
 {
 	
 	funcao inicio()
 	{
-		inteiro idade, c = 1, idademj = 9999, idademv = 0,  idadehv = 0, idadehj = 9999
+		inteiro idade, c = 1, idademj = 0, idademv = 0,  idadehv = 0, idadehj = 0, contm = 0, contf = 0
 		caracter sx
 		cadeia nome, nomemj = "", nomemv = "", nomehj = "", nomehv = ""
 		
@@ -22,26 +22,51 @@ programa//EX 038
 			
 					
 					se (sx == 'M' ou sx == 'm'){
-						se (idade > idadehv){
+						contm++
+						se (contm == 1){
 							idadehv = idade
 							nomehv = nome
+							idadehj = idade
+							nomehj = nome
+							
 						}
+						senao{
+							se (idade > idadehv){
+							idadehv = idade
+							nomehv = nome
+								}
 						 se (idade < idadehj){
 							idadehj = idade
 							nomehj = nome
+								}	
+							
 						}
+
 					}
-					senao se (sx == 'F' ou sx == 'f'){
-						se (idade > idademv){
+				 senao se (sx == 'F' ou sx == 'f'){
+				 		contf++
+						se (contf == 1){
+							nomemv = nome
+							nomemj = nome
+							idademv = idade
+							idademj = idade
+							
+						}
+						senao{
+							se (idade > idademv){
 							idademv = idade
 							nomemv = nome
-						}
-						 se (idade < idademj){
+							
+							}
+						 	se (idade < idademj){
 							idademj = idade
 							nomemj = nome
+							}
 						}
+						
+						
 				}
-					senao{
+				senao{
 						escreva("SEXO INVÁLIDO! NÃO CONTABILIZADO\n")
 					}
 			
@@ -60,9 +85,9 @@ programa//EX 038
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 665; 
+ * @POSICAO-CURSOR = 38; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {idademj, 6, 24, 7}-{idademv, 6, 40, 7}-{idadehv, 6, 54, 7}-{idadehj, 6, 67, 7};
+ * @SIMBOLOS-INSPECIONADOS = {idademj, 6, 24, 7}-{idademv, 6, 37, 7}-{idadehv, 6, 51, 7}-{idadehj, 6, 64, 7};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

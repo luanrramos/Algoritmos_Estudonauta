@@ -1,30 +1,16 @@
-programa//EX 031 - CONTAGEM REGRESSIVA!
+programa//EX 046 - Tabuada
 {
 	inclua biblioteca Util --> u
 	funcao inicio()
 	{
-		inteiro cont, m
-
+		inteiro n, c
+		escreva("NUMERO: ")
+		leia(n)
 		
-		escreva("Sua contavem regressiva vai começar em: ")
-		leia(cont)
-
-		escreva("Marcar os múltiplos de ")
-		leia(m)
-
-		enquanto (cont >= 0){
-
-			se (cont % m == 0){
-				escreva("["+cont+"] - ")u.aguarde(500)
-			}
-			senao{
-				escreva(cont+ " - ")u.aguarde(500)
-			}
-			
-			cont--
-			
+		para (c = 1; c<=10; c++){
+			escreva(n," x ",c, " = ", n * c)u.aguarde(500)
+			escreva("\n")
 		}
-		escreva("FIM!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +18,7 @@ programa//EX 031 - CONTAGEM REGRESSIVA!
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 393; 
+ * @POSICAO-CURSOR = 203; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

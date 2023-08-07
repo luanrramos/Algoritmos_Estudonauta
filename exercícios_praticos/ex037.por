@@ -1,4 +1,4 @@
-programa// EX 037 MAIOR E MENOR
+programa// EX 037 MAIOR E MENOR
 {
 	
 	funcao inicio()
@@ -32,7 +32,7 @@ programa// EX 037 MAIOR E MENOR
 			}
 			c++
 		}
-		escreva("A maior mais jovem é ",nmenor," que tem ",menor, " anos.\n")
+		escreva("A pessoa mais jovem é ",nmenor," que tem ",menor, " anos.\n")
 		escreva("A pessoa mais velha é ",nmaior," que tem ", maior," anos.\n")
 	}
 }
@@ -41,7 +41,7 @@ programa// EX 037 MAIOR E MENOR
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 33; 
+ * @POSICAO-CURSOR = 577; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

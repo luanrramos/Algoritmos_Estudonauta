@@ -1,6 +1,6 @@
 programa//EX033   
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	
 	funcao inicio()
 	{
@@ -11,7 +11,7 @@ programa//EX033
 
 		escreva("---------------------------------------------- \n")
 		enquanto (c <= qnt){
-			num = u.sorteia(1, 15)
+			num = sorteia(1, 15)
 			escreva("\nO "+c+"o valor sorteado foi "+(num))u.aguarde(1000)
 			s += num
 			c += 1
@@ -25,7 +25,7 @@ programa//EX033
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 18; 
+ * @POSICAO-CURSOR = 50; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
